@@ -1,0 +1,110 @@
+@layer init, typography, design;
+
+@import url(typography.css) layer(typography);
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@layer init{
+    :root{
+        --secondary: #83BCAC;
+        --bg:#F6F3F5;
+        --main-gap: 32px;
+        font-family: "Source Sans 3", sans-serif;
+    }
+}
+
+@layer design{
+    body{
+        margin: 0;
+    }
+    .img-responsive{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .card{
+        border: 1px solid var(--bg);
+        display: flex;
+        flex-direction: column;
+
+    }
+    .btn{
+        background-color: var(--secondary);
+    }
+
+    .summer-landing{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: var(--main-gap);
+        background-color: var(--bg);
+    }
+    .summer-landing h1{
+        position: absolute;
+        left: -1000px;
+    }
+
+    .summer-landing__qualities{
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .qualities__card{
+        align-items: center;
+        gap: 10px;
+        padding: 1rem 0;
+    }
+    .qualities__card h3{
+        color: var(--secondary);
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .qualities__card img{
+        width: 40px;
+        height: auto;
+    }
+
+
+    .summer-landing__summer-fav, .summer-fav__card main{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .summer-fav__container{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        
+    }
+    .summer-fav__card{
+        background-color: white;
+        padding: 1.25rem 1.5rem;
+    }
+    
+    .btn--cart{
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        padding: .25rem;
+        border-radius: 8px;
+        color: white;
+    }
+    .btn--cart img{
+        height: 24px;
+        width: 24px;
+    }
+    .availability{
+        
+        align-self: flex-start;
+        color: #35A600;
+        padding: .75rem .5rem;
+        background-color: #EFF8EB;
+        font-size: .75rem;
+        font-weight: 500;
+    }
+    .price{
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--secondary);
+    }
+}
