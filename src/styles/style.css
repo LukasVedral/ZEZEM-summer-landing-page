@@ -12,7 +12,7 @@
 
         /*swiper*/
         --swiper-navigation-sides-offset: 0;
-        --swiper-navigation-color: var(--secondary);
+        --swiper-navigation-color: rgb(0, 0, 0);
 
         --gradient-mobile: to left, rgba(255, 255, 255, 0.5), rgb(255, 255, 255);
         --gradient-desktop: to left, rgba(255, 255, 255, 0), rgb(255, 255, 255);
