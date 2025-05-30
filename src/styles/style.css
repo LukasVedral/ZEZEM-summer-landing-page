@@ -25,11 +25,13 @@
 @layer design{
     body{
         margin: 0;
+        background-color: var(--bg);
     }
     .img-responsive{
         display: block;
         width: 100%;
         height: auto;
+        
     }
     .card{
         border: 1px solid var(--bg);
@@ -47,7 +49,7 @@
         display: flex;
         flex-direction: column;
         gap: var(--main-gap);
-        background-color: var(--bg);
+        max-width: 1450px;
     }
     .summer-landing h1{
         position: absolute;
@@ -212,17 +214,17 @@
     .swiper-slide .syrup{
         background: 
         linear-gradient(var(--gradient-mobile)),
-        url('/images/sirup_v_kuchyni.jpg') center/cover no-repeat;
+        url('/images/sirup_v_kuchyni.avif') center/cover no-repeat;
     }
     .swiper-slide .slushy{
         background: 
         linear-gradient(var(--gradient-mobile)),
-        url('/images/ledova_trist.jpg') center/cover no-repeat;
+        url('/images/ledova_trist.avif') center/cover no-repeat;
     }
     .swiper-slide .lemonade{
         background: 
         linear-gradient(var(--gradient-mobile)),
-        url('/images/domaci_limonada.jpg') center/cover no-repeat;
+        url('/images/domaci_limonada.avif') center/cover no-repeat;
     }
 
 
@@ -230,6 +232,9 @@
 
 
      @media only screen and (min-width: 1080px) {
+        .summer-landing{
+            margin: 0   auto;
+        }
         .summer-landing__qualities{
             display: flex;
         }
