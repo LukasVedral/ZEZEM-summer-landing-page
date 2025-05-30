@@ -94,6 +94,9 @@
         padding: 1.25rem 1.5rem;
         max-width: 540px;
     }
+    .summer-fav__card h3{
+        font-size: 0.875rem;
+    }
     
     .btn--cart{
         display: flex;
@@ -230,8 +233,24 @@
         .summer-landing__qualities{
             display: flex;
         }
-        .qualities__card{
+        .card{
             flex:1;
+        }
+
+        .summer-landing__summer-fav{
+            align-items: start;
+        }
+
+        .summer-fav__container{
+            flex-direction: row;
+            gap: 0;
+        }
+        .summer-fav__all-syrups{
+            flex-direction: row;
+            padding: 2rem 4rem;
+        }
+        .summer-fav__all-syrups p{
+            flex: 1
         }
     }
 }
