@@ -175,8 +175,8 @@
     }
     .swiper-slide li::before {
       content: counter(list-counter);
-      width: 32px;
-      height: 32px;
+      width: 24px;
+      height: 24px;
       border-radius: 50%;
       background: var(--secondary);
       color: white;
@@ -256,6 +256,13 @@
         }
         .summer-fav__all-syrups p{
             flex: 1
+        }
+
+        li.special{
+            margin-left: 1.5rem;
+        }
+        .desktop{
+            display: inline;
         }
     }
 }
