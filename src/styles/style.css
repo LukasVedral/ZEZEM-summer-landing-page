@@ -52,6 +52,7 @@
         flex-direction: column;
         gap: var(--main-gap);
         max-width: 1450px;
+        margin: 0 auto;
     }
     .summer-landing h1{
         position: absolute;
