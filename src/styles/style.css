@@ -43,8 +43,10 @@
         background-color: var(--secondary);
         color: white;
     }
-
-    .summer-landing{
+    .placeholders{
+        border-bottom: 4px solid black;
+    }
+    main{
         padding: 1rem;
         display: flex;
         flex-direction: column;
@@ -143,32 +145,35 @@
         padding: 1rem .75rem;
         border-radius: 12px;
     }
-    .swiper{
+    .swiper, .article{
         width: 100%;
         height: 480px;
         
     }
-    .swiper-slide{
+    .swiper-slide, .article{
         background-color: white;
         display: flex !important;
         flex-direction: column;
         justify-content: center;
+        position: relative;
     }
-    .swiper-slide main{
+    .swiper-slide main, .article main{
         z-index: 1;
     }
-    .swiper-slide h2{
+    .swiper-slide h2, .article h2{
         margin-left: 2.5rem;
     }
     .swiper-slide ol{
        width: 85%;
        margin: 0 2.5rem;
        padding: 0;
-        counter-reset: list-counter;
+    counter-reset: list-counter;
+    }
+    .article li, .swiper-slide li{
+        list-style: none;
+        margin: 1.5rem 0;
     }
     .swiper-slide li{
-        margin: 1.5rem 0;
-       list-style: none;
        display: flex;
         align-items: center;
         gap: .75rem;
@@ -200,11 +205,7 @@
     .desktop{
         display: none;
     }
-    .swiper-slide{
-        display: flex;
-        position: relative;
-    }
-    .swiper-slide .bg{
+    .swiper-slide .bg, .article .bg{
         position: absolute;
         right: 0;
         width: calc(100% - 50vw + 16.6667vw);
@@ -226,6 +227,77 @@
         linear-gradient(var(--gradient-mobile)),
         url('/images/domaci_limonada.avif') center/cover no-repeat;
     }
+    .article .abroad-firm{
+        background: 
+        linear-gradient(var(--gradient-mobile)),
+        url('/images/gifts/abroad-firm.avif') center/cover no-repeat;
+    }
+
+
+
+
+    /*gifts*/
+    .gifts-for-firms h2{
+        font-size: 1.25rem;
+
+    }
+    .text .heading{
+        margin-bottom: 24px;
+    }
+    .banner.left{
+        margin-right: 6rem;
+        margin-bottom: 1rem;
+    }
+    .banner.right{
+        margin-left: 6rem;
+    }
+
+    .icon{
+        width: 40px;
+        height: 40px;
+    }
+    .benefit{
+        width: 104px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .benefits{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        gap: 24px;
+    }
+    .contact, .gifts-made{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        padding: 1.25rem 2.5rem;
+    }
+    .contact{
+        border: 2px solid var(--secondary);
+    }
+
+    .contact__part{
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .gifts-made{
+        width: 320px;
+
+    }
+    .bottom{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+
 
 
 
@@ -264,6 +336,40 @@
         .desktop{
             display: inline;
         }
+
+        .bottom{
+            justify-content: space-evenly;
+        }
+        .banners{
+            display: flex;
+            gap: 16px;
+        }
+        .banners .banner{
+            margin: 0;
+            flex: 1;
+            
+        }
+
+            .swiper-slide .syrup{
+        background: 
+        linear-gradient(var(--gradient-desktop)),
+        url('/images/sirup_v_kuchyni.avif') center/cover no-repeat;
+    }
+    .swiper-slide .slushy{
+        background: 
+        linear-gradient(var(--gradient-desktop)),
+        url('/images/ledova_trist.avif') center/cover no-repeat;
+    }
+    .swiper-slide .lemonade{
+        background: 
+        linear-gradient(var(--gradient-desktop)),
+        url('/images/domaci_limonada.avif') center/cover no-repeat;
+    }
+    .article .abroad-firm{
+        background: 
+        linear-gradient(var(--gradient-desktop)),
+        url('/images/gifts/abroad-firm.avif') center/cover no-repeat;
+    }
     }
 }
 
